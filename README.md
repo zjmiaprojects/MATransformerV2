@@ -12,5 +12,5 @@ EM Dataset is available at https://www.epfl.ch/labs/cvlab/data/data-em/.
 
 Model
 ==
-![image](https://github.com/zjmiaprojects/MATransformerV2/Graphical abstract.jpg)
+![image](https://github.com/zjmiaprojects/MATransformerV2/GraphicalAbstract.jpg)
 
