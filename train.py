@@ -1,7 +1,6 @@
 import os
 import torch
-from MVnet2_1_MobileVITBlock import MobileViTBlock
-from torch import nn as nn
+
 from torch.utils.data import DataLoader
 from Dataset.MoNudataset import MyDataSet,TestDataSet
 
@@ -58,7 +57,7 @@ valing_set_path_lab = r'MoNu/val/lab'
 # batch size
 batch_size = 2
 # **********************************
-from Model import MATransformerV2 as model
+from Model.MATransformerV2 import MATransformerV2 as model
 
 network = model()
 # network = unet(1,1)
@@ -246,4 +245,5 @@ for epoch in range(pre_epoch + 1, pre_epoch + 1 + EPOCHES):
             print('*************************************')
 
             writer.add_scalars(model_name, tag_scalar_dict={'val_loss': val_epoch_loss},global_step=epoch)
+
 
